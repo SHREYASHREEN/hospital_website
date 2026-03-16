@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Token Booking</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>CityCare Hospital</h1>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="booking.html">Book Token</a>
+<a href="doctors.html">Doctors</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+</header>
+
+<div class="container">
+
+<h2>Book Your Token</h2>
+
+<label>Patient Name</label>
+<input type="text" id="name">
+
+<label>Select Department</label>
+
+<select id="dept">
+<option>General Medicine</option>
+<option>Dentist</option>
+<option>Cardiology</option>
+<option>ENT</option>
+<option>Pediatrics</option>
+</select>
+
+<button onclick="bookToken()">Book Token</button>
+
+<div id="result"></div>
+
+</div>
+<h3>Current Token Queue</h3>
+
+<ul id="tokenList">
+</ul>
+
+<script src="script.js"></script>
+
+</body>
+</html>

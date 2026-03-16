@@ -11,7 +11,15 @@ return;
 }
 
 document.getElementById("result").innerHTML =
-"✅ Token " + token + " booked for " + name + " in " + dept + " department.";
+"Token " + token + " booked for " + name + " in " + dept + " department.";
+
+let list = document.getElementById("tokenList");
+
+let newToken = document.createElement("li");
+
+newToken.innerHTML = "Token " + token + " - " + name + " (" + dept + ")";
+
+list.appendChild(newToken);
 
 token++;
 

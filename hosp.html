@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CityCare Hospital</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>CityCare Hospital</h1>
+<p>Online Token Booking System</p>
+</header>
+
+<div class="container">
+
+<h2>Book Your Token</h2>
+
+<label>Patient Name</label>
+<input type="text" id="name" placeholder="Enter your name">
+
+<label>Select Department</label>
+<select id="dept">
+<option>General Medicine</option>
+<option>Dentist</option>
+<option>Cardiology</option>
+<option>ENT</option>
+<option>Pediatrics</option>
+</select>
+
+<button onclick="bookToken()">Book Token</button>
+
+<div id="result"></div>
+
+</div>
+
+<footer>
+<p>© 2026 CityCare Hospital</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
